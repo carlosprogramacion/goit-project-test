@@ -1,7 +1,16 @@
+
+.header {
+  position: absolute;
+  width: 1280px;
+  height: 664px;
+  background-color: $color-background; 
+}
+
 .logo {
-  margin-right: 90px;
+  position: relative;
+  bottom: 477px;
   margin-left: 30px;
-  padding-top: 54px;
+  padding-top: 34px;
   transition-property: transform;
 
   &:hover {
@@ -10,26 +19,38 @@
   }
 }
 
-.header {
-  width: 100%;
-  height: 664px;
-  background-color: $color-background;
-}
-
-.header__container {
+/*.header__container {
+  width: 1280px;
+  height: 80px;
   display: flex;
-  align-items: center;
-}
+  justify-content: center;
+}*/
 
 .header__nav {
+  width: 240px;
+  height: 80px; 
+}
+.linkh-nav {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .header__navigation {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  left: 396px;
+  bottom: 612px;
+  width: 780px;
+  height: 80px;
   padding-top: 52px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+@media (min-width: 768px) {
+  .header__navigation {
+    flex-direction: row;
+  }
 }
 
 .header__list {
@@ -53,22 +74,36 @@
     font-family: $font-family-titan;
   }
 }
+.imgcircle {
+  width: 534px;
+  height: 534px;
+  position: relative;
+  left: 586px;
+  bottom: -70px;
+ }
 
 // Style button header
 
 .button {
+  position: relative;
+  bottom: 95px;
+  width: 150px;
+  height: 80px;
   margin-left: auto;
   margin-right: 30px;
   padding-top: 40px;
   transition-property: transform;
 
   &:hover {
-    transform: scale(0.75);
+    //transform: scale(0.65);
     transition-duration: 2000ms;
   }
 }
 
 .button__header {
+  position: relative;
+  left: -4px;
+  bottom: 607px;
   width: 159px;
   height: 44px;
   border-radius: 22px;
@@ -88,9 +123,12 @@
   }
 }
 
+
 // Article header
 
 .article {
+  position: relative;
+  bottom: 707px;
   width: 277px;
   margin-left: 30px;
   margin-top: 70px;
@@ -119,9 +157,8 @@
 // Button article
 
 .button__article {
-  margin-left: 30px;
-  margin-top: 24px;
-  display: flex;
+ display: flex; 
+ margin-top: 24px; 
 }
 
 .button__product {
@@ -168,10 +205,17 @@
 
 // Images milk
 
-.images__milk {
+ 
+ .images__milk { 
+ position: relative;
+  bottom: 712px;
   margin-left: 30px;
   margin-top: 40px;
   display: flex;
+  .milk-bottle {
+    width: 213px;
+    height: 216px;
+  }
 }
 
 .milk__paragraph {
@@ -212,3 +256,23 @@
 .icecream {
   margin-left: 43%;
 }
+
+
+.ice-cone {
+  position: absolute;
+  width: 236px;
+  height: 557px;
+  left: 690px;
+  bottom: 1px;
+}
+ .eat-icecream {
+  position: relative;
+  width: 304px;
+  height: 241px;
+  left: 510px;
+  bottom: -16px;
+ }
+
+ 
+
+ 
